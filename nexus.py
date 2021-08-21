@@ -80,7 +80,7 @@ def exec(nexus_exe: str, input_case: str, output_case: str, study: str,
     proc = sp.run(cmd, stdout=stdout, stderr=stderr)
     if proc.returncode != 0:
         raise SystemExit(
-            f'Initialization failed. Return code = {proc.returncode}')
+            f'Simulation failed. Return code = {proc.returncode}')
 
 
 if __name__ == '__main__':
